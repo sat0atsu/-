@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>レイヤー名変更君のリスト変更用変換君</title>
+    <title>JSXファイル書き換えアプリ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>レイヤー名変更君のリスト変更用変換君</h1>
-        <textarea id="input" rows="4" cols="50" placeholder="リストに入れたい単語を全角スペースで区切って入力してください（例：森　山　川　海）"></textarea>
-        <button id="convert">変換</button>
-        <textarea id="output" rows="4" cols="50" readonly></textarea>
+        <h1>JSXファイル書き換えアプリ</h1>
+        <input type="file" id="fileInput" accept=".jsx" />
+        <input type="text" id="searchText" placeholder="検索テキスト" />
+        <input type="text" id="replaceText" placeholder="置換テキスト" />
+        <button id="modify">書き換え</button>
+        <button id="download" disabled>ダウンロード</button>
     </div>
     <script src="app.js"></script>
 </body>
